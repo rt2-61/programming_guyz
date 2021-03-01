@@ -21,4 +21,7 @@ Memo1->Lines->Add("Parmenov");
 Memo1->Lines->Add("Masneva");
 Memo1->Lines->Add("Murzin");}
 Memo1->Lines->Add("Popov");}
+Memo1->Lines->Add("Kugashov");}
+Memo1->Lines->Add("Sibircev");}
+Memo1->Lines->Add("Osipov");}
 //---------------------------------------------------------------------------
