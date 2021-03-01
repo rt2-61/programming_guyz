@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.752,C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\programming_guyz\labnew2\Unit2.dfm=C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
     <Transaction>1899.12.30 00:00:00.000.364,=C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.216,=C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.752,C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\Unit2.cpp=C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\programming_guyz\labnew2\Unit2.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.752,C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\programming_guyz\labnew2\Unit2.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.920,C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\Project2.cbproj=C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\programming_guyz\labnew2\Project2.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.752,C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\programming_guyz\labnew2\Unit2.cpp=C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.752,C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\programming_guyz\labnew2\Unit2.h=C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\Unit2.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.674,C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\programming_guyz\labnew2\Project2PCH1.h=C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.920,C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\programming_guyz\labnew2\Project2.cbproj=C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\Project2.cbproj</Transaction>
     <Transaction>1899.12.30 00:00:00.000.742,C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\programming_guyz\labnew2\Project2.cbproj=C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\programming_guyz\labnew2\Project2.cbproj</Transaction>
     <Transaction>1899.12.30 00:00:00.000.283,=C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.111,=C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.674,C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\Project2PCH1.h=C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\programming_guyz\labnew2\Project2PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.752,C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\Unit2.h=C:\Users\Валерия\Documents\Embarcadero\Studio\Projects\programming_guyz\labnew2\Unit2.h</Transaction>
   </Transactions>
 </BorlandProject>
