@@ -29,5 +29,6 @@ void __fastcall TForm2::Button1Click(TObject *Sender)
 	Memo1->Lines->Add("KolesnichenkoNEW");
 	Memo1->Lines->Add("MasnevaNEW");
 Memo1->Lines->Add("Zhuravlev");
+	Memo1->Lines->Add("Masnevamycomp");
 }
 //---------------------------------------------------------------------------
