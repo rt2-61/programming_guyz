@@ -1,0 +1,117 @@
+//---------------------------------------------------------------------------
+#define  uchar  unsigned char
+#include <vcl.h>
+#include <string>
+#pragma hdrstop
+
+#include "Unit2.h"
+#include "hidlibrary.h"
+#include "usbconfig.h"
+
+char  vendorName[]  = {USB_CFG_VENDOR_NAME, 0};
+char  productName[] = {USB_CFG_DEVICE_NAME, 0};
+
+struct dataexchange_t           // ќписание структуры дл€ передачи данных
+{
+   uchar b1;
+   uchar b2;
+};
+
+
+struct dataexchange_t pdata = {0, 0};
+
+HIDLibrary <dataexchange_t> hid; // создаем экземпл€р класса с типом нашей структуры
+
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm2 *Form2;
+//---------------------------------------------------------------------------
+__fastcall TForm2::TForm2(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+
+int connect()  // этой функцией будем подключатьс€ к устройству
+{
+   int i, n, res=0;
+   string exampleDeviceName = "";
+
+   exampleDeviceName += vendorName;
+   exampleDeviceName += " ";
+   exampleDeviceName += productName;
+
+   n = hid.EnumerateHIDDevices(); // узнаем все Hid устройства vid_16c0&pid_05df
+								  // vid и pid указаны в hidlibrary.h константой idstring
+
+   for (i=0; i<n; i++)            // ищем среди них наше
+   {
+	  bool a= hid.Connect(i);
+
+	  // GetConnectedDeviceName() возвращает string,
+      // где через пробел указаны vendor и product Name.
+	  // —равниваем, если совпало - значить устройство наше
+	  string tmp = hid.GetConnectedDeviceName();
+	  if ( hid.GetConnectedDeviceName() == exampleDeviceName )
+	  {
+		 res = 1;
+         break;
+      }
+   }
+   return res;
+}
+void __fastcall TForm2::Button1Click(TObject *Sender)
+{
+	if ( 1 == connect() )
+   {
+      hid.ReceiveData(&pdata);           // „итаем данные с устройства
+
+      if (pdata.b1)
+         CheckBox1->Checked = true;
+      else
+         CheckBox1->Checked = false;
+
+      if (pdata.b2)
+         CheckBox2->Checked = true;
+      else
+		 CheckBox2->Checked = false;
+   }
+   else
+   {
+      AnsiString s = "";
+      s += vendorName;
+      s += " ";
+      s += productName;
+      s += " не подключено.";
+      ShowMessage(s);
+   }
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm2::Button2Click(TObject *Sender)
+{
+    if ( 1 == connect() )
+   {
+      if (CheckBox1->Checked)
+         pdata.b1 = 1;
+      else
+         pdata.b1 = 0;
+
+      if (CheckBox2->Checked)
+         pdata.b2 = 1;
+      else
+         pdata.b2 = 0;
+
+      hid.SendData(&pdata);           // ќтправл€ем данные устройству
+   }
+   else
+   {
+      AnsiString s = "";
+      s += vendorName;
+      s += " ";
+      s += productName;
+	  s += " не подключено.";
+      ShowMessage(s);
+   }
+}
+//---------------------------------------------------------------------------

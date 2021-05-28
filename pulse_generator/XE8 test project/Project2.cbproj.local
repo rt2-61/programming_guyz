@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.550,C:\Users\Melat0nin\Documents\Embarcadero\Studio\Projects\XE8 test project\Project2.cbproj=C:\Users\Melat0nin\Documents\Embarcadero\Studio\Projects\Project2.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.006,C:\Users\Melat0nin\Documents\Embarcadero\Studio\Projects\XE8 test project\Unit2.cpp=C:\Users\Melat0nin\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.054,=C:\Users\Melat0nin\Documents\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.006,C:\Users\Melat0nin\Documents\Embarcadero\Studio\Projects\XE8 test project\Unit2.h=C:\Users\Melat0nin\Documents\Embarcadero\Studio\Projects\Unit2.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.035,=C:\Users\Melat0nin\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.485,C:\Users\Melat0nin\Documents\Embarcadero\Studio\Projects\XE8 test project\Project2PCH1.h=C:\Users\Melat0nin\Documents\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.006,C:\Users\Melat0nin\Documents\Embarcadero\Studio\Projects\XE8 test project\Unit2.dfm=C:\Users\Melat0nin\Documents\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
